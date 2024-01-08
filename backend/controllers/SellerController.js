@@ -42,10 +42,10 @@ const getAllSellers = async (req, res) => {
 
 //Update the profile of Seller
 const update = async (req, res) => {
-  var id = req.params.id;
+  var Sellerid = req.params.id;
   // await userModel.updateOne()
   sellerup = await sellerModel
-    .updateOne({ _id: id }, { $set: req.body })
+    .updateOne({ _id: Sellerid }, { $set: req.body })
     .then((sellerup) => {
       res.status(200).json(sellerup);
     })
