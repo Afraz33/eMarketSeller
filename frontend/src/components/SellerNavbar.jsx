@@ -45,19 +45,31 @@ function SellerNavbar({ isLogin, getCurrentState }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link
+                  to="/Products"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Products
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link
+                  to="/about"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link
+                  to="/contact"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             {isLogin && (

@@ -13,6 +13,8 @@ function AddProduct({ products, addProduct }) {
   const [token, setToken] = useState("");
   const [alertMessage, setAlertMessage] = useState("");
 
+  //Testing
+
   useEffect(() => {
     const ttoken = localStorage.getItem("token");
     setToken(ttoken);
