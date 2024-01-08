@@ -26,7 +26,6 @@ function Login({ sellers, login, error, changeLogin }) {
         alert("Login failed: Please cheak your credential");
       } else {
         alert("Login failed: Please cheak your credential");
-        // setError("An error occurred. Please try again."); // Generic error message
       }
     }
   };

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { connect } from "react-redux";
-import { fetchSellerProducts } from "../reduxStores/actions/productAction";
+
 import {
   deleteProduct,
   updateProduct,

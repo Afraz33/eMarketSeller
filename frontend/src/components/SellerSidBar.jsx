@@ -231,26 +231,6 @@ function SellerSidebar() {
               </ul>
             )}
           </li>
-          {/* <li>
-            <a
-              href="#"
-              className={`nav-link ${
-                activeItem === "orders" ? "active" : "nav-link text-white"
-              }`}
-              onClick={() => handleItemClick("orders")}
-              style={{
-                backgroundColor: activeItem === "orders" ? "purple" : "",
-                color: activeItem === "orders" ? "white" : "",
-              }}
-            >
-              <i
-                className="fa fa-table me-3"
-                aria-hidden="true"
-                style={{ fontSize: "20px" }}
-              ></i>
-              <span className="fs-5">Orders</span>
-            </a>
-          </li> */}
         </ul>
         <hr />
         <div className="dropdown"></div>
