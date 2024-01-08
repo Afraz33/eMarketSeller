@@ -9,15 +9,16 @@ import ProductS from "./productS";
 
 function SellerProduct({
   products,
-  fetchSellerProducts,
   fetchSellerProductByName,
   fetchSellerProductByCategory,
+  fetchSellerProducts,
 }) {
   const [seller, setSeller] = useState({});
+
+  //useRef to access search value
+  const searchVal = useRef("");
   const [token, setToken] = useState("");
   const [selected, setSelected] = useState("default");
-  const searchVal = useRef("");
-
   useEffect(() => {
     const ttoken = localStorage.getItem("token");
     const storedSellerString = localStorage.getItem("seller");
