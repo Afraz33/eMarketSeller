@@ -1,25 +1,27 @@
-const express = require('express');
-const { Authenticate,checkSeller } = require('../controllers/authController');
+const express = require("express");
+const { checkSeller, Authenticate } = require("../controllers/authController");
 const sellerRouter = express.Router();
-const {signup,login,update,delAccount,getAllSellers}=require("../controllers/SellerController");
+const {
+  signup,
+  login,
+  update,
+  delAccount,
+  getAllSellers,
+} = require("../controllers/SellerController");
 
-// Signup
-sellerRouter.post('/signup', signup);
+// Signup for Seller
+sellerRouter.post("/signup", signup);
 
-// Login
-sellerRouter.post('/login', login);
+// Login for Seller
+sellerRouter.post("/login", login);
 
-// Update
-sellerRouter.put('/update/:id',Authenticate,checkSeller, update);
+// Update for Seller
+sellerRouter.put("/update/:id", Authenticate, checkSeller, update);
 
-// Delete
-sellerRouter.delete('/delete/:id',Authenticate,checkSeller, delAccount);
-//
-sellerRouter.get('/get', getAllSellers);
+// Delete for Seller
+sellerRouter.delete("/delete/:id", Authenticate, checkSeller, delAccount);
+
+//get All Sellers
+sellerRouter.get("/get", getAllSellers);
 
 module.exports = sellerRouter;
-
-
-
-
-
