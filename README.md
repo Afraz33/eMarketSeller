@@ -1,0 +1,1 @@
+This is a seller panel of an E-commerce app where users can buy, book and order different items based on their needs. This panel allows the sellers to setup their profiles, add products and list them for the users to buy and order
